@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DANH SÁCH PHIM"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/xam">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="291dp"
+            android:layout_marginLeft="7dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="PHIM SẮP CHIẾU"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_full_psc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FEFAFD"
+            android:textColor="@color/black"
+            android:text="Xem thêm"/>
+    </LinearLayout>
+
+<!--    <HorizontalScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_psc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp" />
+
+
+            <!--            <FrameLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <ImageButton-->
+<!--                    android:layout_width="198dp"-->
+<!--                    android:layout_height="294dp"-->
+<!--                    android:src="@drawable/anh1"-->
+<!--                    android:id="@+id/thu"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_margin="7dp"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|bottom"-->
+<!--                    android:text="Phim 1"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="15dp" />-->
+
+<!--            </FrameLayout>-->
+
+<!--            <FrameLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="198dp"-->
+<!--                    android:layout_height="294dp"-->
+<!--                    android:src="@drawable/anh2"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_margin= "7dp"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="15dp"-->
+<!--                    android:layout_gravity="center|bottom"-->
+<!--                    android:text="Phim 2"/>-->
+<!--            </FrameLayout>-->
+
+<!--            <FrameLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="198dp"-->
+<!--                    android:layout_height="294dp"-->
+<!--                    android:src="@drawable/anh3"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_margin="7dp"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="15dp"-->
+<!--                    android:layout_gravity="center|bottom"-->
+<!--                    android:text="Phim 3"/>-->
+<!--            </FrameLayout>-->
+
+
+
+        </LinearLayout>
+
+<!--    </HorizontalScrollView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:background="@color/xam">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="291dp"
+            android:layout_marginLeft="7dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="PHIM ĐANG CHIẾU"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_full_f_dang_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FEFAFD"
+            android:textColor="@color/black"
+            android:text="Xem thêm"/>
+    </LinearLayout>
+
+<!--    <HorizontalScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_pdac"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"/>
+
+<!--            <FrameLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.imageview.ShapeableImageView-->
+<!--                    android:layout_width="198dp"-->
+<!--                    android:layout_height="294dp"-->
+<!--                    android:src="@drawable/anh5"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_margin="7dp"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="15dp"-->
+<!--                    android:layout_gravity="center|bottom"-->
+<!--                    android:text="Phim 1"/>-->
+<!--            </FrameLayout>-->
+
+
+<!--            <FrameLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.imageview.ShapeableImageView-->
+<!--                    android:layout_width="198dp"-->
+<!--                    android:layout_height="294dp"-->
+<!--                    android:src="@drawable/anh4"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_margin="7dp"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="15dp"-->
+<!--                    android:layout_gravity="center|bottom"-->
+<!--                    android:text="Phim 2"/>-->
+<!--            </FrameLayout>-->
+
+
+
+<!--            <FrameLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.imageview.ShapeableImageView-->
+<!--                    android:layout_width="198dp"-->
+<!--                    android:layout_height="294dp"-->
+<!--                    android:src="@drawable/download"-->
+<!--                    android:layout_margin="7dp"-->
+<!--                    android:layout_weight="1"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="15dp"-->
+<!--                    android:layout_gravity="center|bottom"-->
+<!--                    android:text="Phim 3"/>-->
+<!--            </FrameLayout>-->
+
+
+
+        </LinearLayout>
+<!--    </HorizontalScrollView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:background="@color/xam">
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+</ScrollView>

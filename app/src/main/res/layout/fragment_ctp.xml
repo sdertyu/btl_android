@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListPhim.CTPFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi tiết"
+                android:textSize="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_gravity=""
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/xam">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/anhCT"
+                    android:layout_width="216dp"
+                    android:layout_height="320dp"
+                    android:src="@drawable/nen_poster"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="left|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="19dp"
+                        android:text="NGÀY CHIẾU" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="dd/mm/yyyy"
+                        android:id="@+id/txt_ngayChieu"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="19dp"
+                        android:text="THỜI LƯỢNG" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="120 phút"
+                        android:id="@+id/txt_thoiLuong"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="19dp"
+                        android:text="THỂ LOẠI" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="viễn tưởng"
+                        android:id="@+id/txt_theLoai"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="19dp"
+                        android:text="ĐẠO DIỄN " />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Bay"
+                        android:id="@+id/txt_daoDien"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="19dp"
+                        android:text="ĐỘ TUỔI" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="P"
+                        android:id="@+id/txt_doTuoi"/>
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:text="DIỄN VIÊN"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_dienVien"
+                android:text = "Nguyễn Thị Kiều Anh, Ngô Minh Phương, Trần Khánh Hùng ..."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:text="GIỚI THIỆU"/>
+
+            <TextView
+                android:id="@+id/txt_gioiThieu"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="15dp"
+                android:textSize="17dp"
+                android:layout_height="wrap_content"
+                android:text = "Loại P là phim được phép phổ biến rộng rãi đến mọi đối tượng. Nội dung phim loại P phản ánh những vấn đề của tự nhiên và xã hội mang tính giải trí, giáo dục, khuyến khích những giá trị đạo đức và quan hệ xã hội tích cực. Đối với phim loại P, không chấp nhận hình ảnh, âm thanh, ngôn ngữ thể hiện cảnh uy hiếp, đe dọa người khác (trừ trường hợp hình ảnh, âm thanh, ngôn ngữ đó được thể hiện ở mức độ nhẹ và phù hợp với nội dung phim)..."/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
